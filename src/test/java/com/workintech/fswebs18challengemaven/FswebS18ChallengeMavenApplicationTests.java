@@ -160,7 +160,7 @@ class FswebS18ChallengeMavenApplicationTests {
 		updatedCard.setType(Type.KING);
 		given(cardRepository.update(any())).willReturn(updatedCard);
 
-		mockMvc.perform(put("/cards")
+		mockMvc.perform(put("/cards/")
 						.contentType(MediaType.APPLICATION_JSON)
 						.content(objectMapper.writeValueAsString(updatedCard)))
 				.andExpect(status().isOk())
