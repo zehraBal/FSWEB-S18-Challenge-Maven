@@ -54,7 +54,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * [GET]/workintech/cards => tüm card listini dönmeli.
  * [GET]/workintech/cards/byColor/{color} => Verilen renkteki kartları döner.
  * [POST]/workintech/cards => Bir adet card objesini veritabanına kaydeder.
- * [PUT]/workintech/cards/{id} => İlgili id deki card objesinin değerlerini yeni gelen data ile değiştirir.
+ * [PUT]/workintech/cards/ => İlgili id deki card objesinin değerlerini yeni gelen data ile değiştirir.
  * [DELETE]/workintech/card/{id} => İlgili id değerindeki card objesini veritabanından siler.
  * [GET]/workintech/cards/byValue/{value} => Parametre olarak value değerini alır ve CardRepositoryImpl sınıfındaki findByType metodunu çağırır.
  * [GET]/workintech/cards/byType/{type} => Parametre olarak type değerini alır ve CardRepositoryImpl sınıfındaki findByType metodunu çağırır.
