@@ -169,7 +169,7 @@ class FswebS18ChallengeMavenApplicationTests {
 
 	@Test
 	@DisplayName("Remove card test")
-	void testRemoveBurger() throws Exception {
+	void testRemoveCard() throws Exception {
 
 		given(cardRepository.remove(card.getId())).willReturn(card);
 
