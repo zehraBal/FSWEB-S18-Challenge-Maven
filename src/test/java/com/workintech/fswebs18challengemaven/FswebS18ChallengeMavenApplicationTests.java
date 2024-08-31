@@ -194,9 +194,9 @@ class FswebS18ChallengeMavenApplicationTests {
 	@DisplayName("Find by value test")
 	void testFindByValue() throws Exception {
 		List<Card> cards = Arrays.asList(card2);
-		given(cardRepository.findByValue(card2.getValue().intValue())).willReturn(cards);
+		given(cardRepository.findByValue(card2.getValue())).willReturn(cards);
 
-		mockMvc.perform(get("/cards/byValue/{value}", card2.getValue().intValue()))
+		mockMvc.perform(get("/cards/byValue/{value}", card2.getValue()))
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$", hasSize(1)))
 				.andExpect(jsonPath("$[0].color", is(card2.getColor().toString())));
